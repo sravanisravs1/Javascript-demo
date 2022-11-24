@@ -1,0 +1,35 @@
+class User{
+
+
+   static count() {
+
+       User.registeredusers = (User.registeredusers || 0) + 1;
+
+       return;
+
+   } 
+
+ constructor(name,id,email) {
+
+   User.count(); 
+
+   this.name = name;
+
+   this.id=id;
+
+   this.email=email;
+
+
+   }
+
+
+
+}
+
+let student1=new User("Rajesh",23,'sravani@gmail.com');
+
+let student2=new User("Sravani",23,'sravs@gmail.com')
+
+console.log(User.registeredusers);
+
+-----------------------------------------------------------------------------------
